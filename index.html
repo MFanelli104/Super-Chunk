@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super Chunk</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="game-board">
+      <!-- <button id="submit-button">Test Alert</button> -->
+      <div class="header">
+        <h1 class="title">Super Chunk</h1>
+        <button class="menu-button">Menu</button>
+      </div>
+      <div class="timer-wrapper">
+        <span>Time –&nbsp</span><span id="timer">00:00</span>
+      </div>
+      <div class="play-space">
+        <div class="centering">
+          <table id="sudoku-table" class="sudoku-board"></table>
+        </div>
+        <div class="spacer">
+          <div class="rule"></div>
+        </div>
+      </div>
+      <div id="color-options" class="color-options"></div>
+    </div>
+  </div>
+
+  <div id="alert-modal" class="alert-modal">
+    <div class="bottom-sheet">
+      <div class="alert-modal-content">
+        <p id="emoji-alert" class="emoji-alert"></p>
+        <p id="alert-title" class="alert-title"></p> <!-- Add class for the title -->
+        <p id="alert-message" class="alert-message"></p> <!-- Add class for the message -->
+        <div class="button-wrapper">
+          <button id="alert-close" class="alert-close" style="display:none">Close</button>
+          <button id="alert-new-game" class="alert-button" style="display:none">Play Again</button>
+          <div class="share-quit">
+            <button id="alert-other-1" class="alert-button" style="display:none">Share</button>
+            <button id="alert-other-2" class="alert-button" style="display:none">Quit</button>
+          </div>
+        </div>
+        <div id="alert-custom-content" style="display: none;">
+          <div id="menu-buttons" style="display: none;">
+            <!-- <button class="menu-content">How to Play</button> -->
+            <!-- <div class="menu-content menu-checkbox">
+              <label class="checkbox-container">
+                <span class="check-label">Numbers</span>
+                <input type="checkbox" id="checkbox1">
+                <span class="checkbox-checkmark"></span>
+              </label>
+            </div> -->
+            <!-- <div class="menu-content menu-checkbox">
+              <label class="checkbox-container">
+                <span class="check-label">Dark Mode</span>
+                <input type="checkbox" id="checkbox2">
+                <span class="checkbox-checkmark"></span>
+              </label>
+            </div> -->
+            <!-- <button class="menu-quit">Quit</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
